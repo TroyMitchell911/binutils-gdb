@@ -397,6 +397,7 @@ ALL_64_EMULATION_SOURCES = \
 	eelf32b4300.c \
 	eelf32bmip.c \
 	eelf32bmipn32.c \
+	eelf32lriscv_caffeinix.c \
 	eelf32briscv.c \
 	eelf32briscv_ilp32.c \
 	eelf32briscv_ilp32f.c \
@@ -437,6 +438,7 @@ ALL_64_EMULATION_SOURCES = \
 	eelf64alpha_nbsd.c \
 	eelf64bmip.c \
 	eelf64bpf.c \
+	eelf64lriscv_caffeinix.c \
 	eelf64briscv.c \
 	eelf64briscv_lp64.c \
 	eelf64briscv_lp64f.c \

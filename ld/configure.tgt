@@ -811,6 +811,16 @@ powerpc-*-windiss*)	targ_emul=elf32ppcwindiss
 			;;
 pru*-*-*)		targ_emul=pruelf
 			;;
+riscv32*-*-caffeinix*)
+			targ_emul=elf32lriscv_caffeinix
+			targ_extra_emuls="elf32lriscv elf64lriscv elf32briscv elf64briscv"
+			targ_extra_libpath=$targ_extra_emuls
+			;;
+riscv64*-*-caffeinix*)
+			targ_emul=elf64lriscv_caffeinix
+			targ_extra_emuls="elf64lriscv elf32lriscv elf64briscv elf32briscv"
+			targ_extra_libpath=$targ_extra_emuls
+			;;
 riscv32be*-*-linux*)	targ_emul=elf32briscv
 			targ_extra_emuls="elf32briscv_ilp32f elf32briscv_ilp32 elf64briscv elf64briscv_lp64f elf64briscv_lp64 elf32lriscv elf32lriscv_ilp32f elf32lriscv_ilp32 elf64lriscv elf64lriscv_lp64f elf64lriscv_lp64"
 			targ_extra_libpath=$targ_extra_emuls
